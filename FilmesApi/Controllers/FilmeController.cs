@@ -17,4 +17,10 @@ public class FilmeController : ControllerBase
         Console.WriteLine(filme.Genero);
         Console.WriteLine(filme.Duracao);
     }
+
+    [HttpGet]
+    public List<Filme> RecuperaFilme()
+    {
+        return filmes;
+    }
 }
