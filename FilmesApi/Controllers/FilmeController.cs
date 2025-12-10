@@ -63,7 +63,7 @@ public class FilmeController : ControllerBase
     }
 
     [HttpPatch("{id}")]
-    public IActionResult AtualizaFilme(int id, 
+    public IActionResult AtualizaFilmeParcial(int id, 
         JsonPatchDocument<UpdateFilmeDto> patch)
     {
         var filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
